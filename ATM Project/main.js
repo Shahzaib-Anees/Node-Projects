@@ -6,7 +6,7 @@ let userans = await inquirer.prompt([{
     }, {
         type: "number",
         name: "UserPin",
-        message: "Please enter your Account Pin:"
+        message: "Please enter your Account Pin:",
     }, {
         type: "list",
         name: "accounttype",
@@ -37,14 +37,6 @@ let userans = await inquirer.prompt([{
         },
     }
 ]);
-if (userans.UserID !== "Shahzaib") {
-    console.log(`Please enter correct user ID`);
-}
-else if (userans.UserPin !== 1234) {
-    console.log(`Incorrect pin`);
-}
-else { }
-;
 // console.log(userans);
 let UserBalance = Math.floor(Math.random() * 1000000);
 if (userans.transactiontype === "Withdrawal") {
