@@ -8,7 +8,7 @@ interface Userans {
     Withdrawal: number,
 }
 let userans: Userans = await inquirer.prompt([{
-    type: "string",
+    type: "input",
     name: "UserID",
     message: "Please enter your ID:",
 },{

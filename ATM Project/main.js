@@ -1,6 +1,6 @@
 import inquirer from "inquirer";
 let userans = await inquirer.prompt([{
-        type: "string",
+        type: "input",
         name: "UserID",
         message: "Please enter your ID:",
     }, {
