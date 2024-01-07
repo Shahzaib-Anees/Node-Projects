@@ -51,11 +51,11 @@ let UserBalance=Math.floor(Math.random()*1000000);
 if(userans.transactiontype==="Withdrawal"){
     let withdrawalAmount=userans.Withdrawal;
     console.log(`Congratulations! Withdrawal of ${withdrawalAmount} has been successful
-   Your remaining account balance is ${UserBalance-withdrawalAmount} `);
+Your remaining account balance is ${UserBalance-withdrawalAmount} `);
 }else if(userans.transactiontype==="FastCash"){
     let UserAmountInput=userans.FastCash;
     console.log(`Congratulations! Withdrawal of ${UserAmountInput} has been successful
-    Your remaining account balance is ${UserBalance-UserAmountInput}`)
+Your remaining account balance is ${UserBalance-UserAmountInput}`)
 }else{
     console.log(`Oops! Something went wrong.`)
 }
